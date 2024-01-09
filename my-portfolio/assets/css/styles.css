@@ -470,6 +470,12 @@ body.dark-theme {
 .skill__img {
   width: 70px;
 }
+.box__3 {
+  margin-top: 1rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+}
 .skill__name {
   background-color: var(--white-color);
   top: -35px;
@@ -963,9 +969,13 @@ body.dark-theme {
 
 @media screen and (min-width: 768px) {
   .skill__container {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(6, max-content);
+    gap: 1.5rem 1.5rem;
   }
-
+  .box__3 {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
   .nav__menu {
     width: 500px;
   }
@@ -1013,7 +1023,7 @@ body.dark-theme {
     margin-bottom: 3.5rem;
   }
   .nav {
-    height: calc(var(--header-height)+ 2rem);
+    height: calc(var(--header-height) + 2rem);
   }
   .nav__button {
     padding: 0.75rem 0.75rem;
@@ -1082,6 +1092,10 @@ body.dark-theme {
   .skill__box {
     width: 100px;
     height: 100px;
+  }
+  .box__3 {
+    margin-top: 2rem;
+    gap: 1.5rem;
   }
   .skill__container {
     grid-template-columns: repeat(9, max-content);
